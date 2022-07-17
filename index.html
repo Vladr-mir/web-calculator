@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css" />
+  <script src="./main.js" defer></script>
   <title>Calculator</title>
 </head>
 <body>
@@ -13,37 +14,37 @@
     <div class="keypad">
       <!--Row 1-->
       <div class="row">
-        <button class="aditional-operator">AC</button>
-        <button class="aditional-operator">+/-</button>
-        <button class="aditional-operator">%</button>
-        <button class="operator">/</button>
+        <button class="aditional-operator" value="clear">AC</button>
+        <button class="aditional-operator" value="sign">+/-</button>
+        <button class="aditional-operator" value="percent">%</button>
+        <button class="operator" value="operator" data-opt="divide">/</button>
       </div>
       <!--Row 2-->
       <div class="row">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator">*</button>
+        <button value="number" data-num="7">7</button>
+        <button value="number" data-num="8">8</button>
+        <button value="number" data-num="9">9</button>
+        <button class="operator" value="operator" data-opt="muresult ltiply">*</button>
       </div>
       <!--Row 3-->
       <div class="row">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator">-</button>
+        <button value="number" data-num="4">4</button>
+        <button value="number" data-num="5">5</button>
+        <button value="number" data-num="6">6</button>
+        <button class="operator" value="operator" data-opt="substract">-</button>
       </div>
       <!--Row 4-->
       <div class="row">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator">+</button>
+        <button value="number" data-num="1">1</button>
+        <button value="number" data-num="2">2</button>
+        <button value="number" data-num="3">3</button>
+        <button class="operator" value="operator" data-opt="sum">+</button>
       </div>
       <!--Row 5-->
       <div class="row">
-        <button id="bigger">0</button>
-        <button>.</button>
-        <button class="operator">=</button>
+        <button id="bigger" value="number" data-num="0">0</button>
+        <button value=".">.</button>
+        <button class="operator" value="operate">=</button>
       </div>
     </div>
   </div>
